@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
                 if (novoHorario) {
                     try {
-                        const res = await fetch(`http://localhost:3000/agendamentos/${id}`, {
+                        const res = await fetch(`https://teste-owkx.onrender.com/agendamentos/${id}`, {
                             method: "PATCH",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({ horario: novoHorario })
